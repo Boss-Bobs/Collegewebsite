@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Springfield College</title>
+    <style>
+        /* Container for both sections */
+        .container {
+            display: flex;           /* Use flexbox for layout */
+            justify-content: space-between; /* Space between items */
+            max-width: 1200px;      /* Limit the total width */
+            margin: 0 auto;         /* Center the container */
+        }
+
+        /* Style for each content box */
+        .content {
+            flex: 1;                /* Allow each div to grow equally */
+            margin: 10px;          /* Space between divs */
+            padding: 20px;         /* Add padding */
+            border: 1px solid #ccc; /* Optional: add a border */
+            border-radius: 8px;    /* Optional: round corners */
+            overflow: hidden;       /* Hide overflow */
+            background-color: #f9f9f9; /* Optional: background color */
+        }
+
+        /* Style for the button */
+        .readmorebtn {
+            display: block;         /* Make the button a block element */
+            margin-top: 10px;      /* Space above the button */
+            padding: 8px 16px;     /* Add padding to the button */
+            cursor: pointer;        /* Change cursor to pointer */
+        }
+
+        /* Style for the additional text */
+        .more {
+            display: none;          /* Initially hidden */
+            margin-top: 10px;      /* Space above the additional text */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="content">
+        <h2>ABOUT <b style="color: rgb(133,40, 40);">SPRINGFIELD COLLEGE</b></h2>
+        <p>At SPRINGFIELD College, we are committed to fostering a rich academic environment...</p>
+        <button class="readmorebtn" onclick="toggleText('more1', this)">Read More</button>
+        <span class="more" id="more1">
+            Our diverse range of programs is designed to meet the needs of a dynamic workforce...
+        </span>
+    </div>
+
+    <div class="content">
+        <h2>OUR PROGRAMS</h2>
+        <p>We offer a variety of programs designed to help students achieve their goals...</p>
+        <button class="readmorebtn" onclick="toggleText('more2', this)">Read More</button>
+        <span class="more" id="more2">
+            From undergraduate degrees to graduate studies, we provide numerous opportunities jfkvnjzfv jzfvkjzdf jdfk vkj zjkbvjkz d jkzfj KJWS kjsv kjgfvr  SKJv...
+        </span>
+    </div>
+</div>
+
+<script>
+function toggleText(moreId, btn) {
+    const moretext = document.getElementById(moreId);
+    
+    if (moretext.style.display === "none" || moretext.style.display === "") {
+        moretext.style.display = "block";  // Use block for better layout
+        btn.textContent = "Read Less";
+    } else {
+        moretext.style.display = "none";
+        btn.textContent = "Read More";
+    }
+}
+</script>
+
+</body>
+</html>

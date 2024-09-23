@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics</title>
+    <link rel="icon" type="icon/x-icon" href="favicon.jpeg" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(255, 244, 227);
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+        }
+
+        header {
+            background-color: rgb(133, 40, 40);
+            color: beige;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Remove underline from links */
+            color: rgb(133, 40, 40); /* Set link color to dark red */
+            font-size: 18px;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: rgb(100, 20, 20); /* Slightly darker color on hover */
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        main {
+            width: 80%;
+            margin: 20px auto;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgb(240, 240, 240);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Flex container for side-by-side sections */
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 900px;
+            margin-bottom: 40px;
+        }
+
+        .flex-container section {
+            width: 45%; /* Reduce width of each section */
+            margin: 0 10px; /* Add some spacing between sections */
+        }
+
+        .hero {
+            background-color: rgb(250, 235, 215);
+        }
+
+        .programs {
+            background-color: rgb(220, 240, 255);
+        }
+
+        .online-learning {
+            background-color: rgb(255, 240, 230);
+        }
+
+        .resources {
+            background-color: rgb(240, 255, 240);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .programs h2,
+        .online-learning h2,
+        .resources h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        /* Remove list style and center text inside sections */
+        .programs ul,
+        .online-learning ul,
+        .resources ul {
+            list-style-type: none; /* Remove bullet points */
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center list content */
+        }
+
+        .programs ul li,
+        .online-learning ul li,
+        .resources ul li {
+            margin: 5px 0;
+        }
+
+        .programs ul li a,
+        .online-learning ul li a,
+        .resources ul li a {
+            text-decoration: none; /* Remove underline */
+            color: rgb(133, 40, 40); /* Dark red color */
+        }
+
+        .programs ul li a:hover,
+        .online-learning ul li a:hover,
+        .resources ul li a:hover {
+            color: rgb(100, 20, 20); /* Darker red on hover */
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background-color: rgb(133, 40, 40);
+            color: beige;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+            font-size: 0.9rem;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Our Institution</h1>
+            <nav>
+                <ul>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admission.html">Admissions</a></li>
+                    <li><a href="students.html">Students</a></li>
+                    <li><a href="faculty.html">Faculty/Staff</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="alumni.html">Alumni</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Academics</h1>
+            <p>Welcome to our academic programs! Our institution is dedicated to providing a comprehensive education that
+                prepares students for success in their careers.</p>
+        </section>
+
+        <div class="flex-container">
+            <section class="programs undergraduate">
+                <h2>Undergraduate Programs</h2>
+                <p>Our undergraduate programs are designed to give students a solid foundation in their chosen fields.</p>
+                <ul>
+                    <li><a href="business.html">Business Administration</a></li>
+                    <li><a href="computer_science.html">Computer Science</a></li>
+                    <li><a href="engineering.html">Engineering</a></li>
+                    <li><a href="arts.html">Fine Arts</a></li>
+                    <li><a href="health_sciences.html">Health Sciences</a></li>
+                </ul>
+            </section>
+
+            <section class="programs graduate">
+                <h2>Graduate Programs</h2>
+                <p>Our graduate programs offer advanced education and research opportunities.</p>
+                <ul>
+                    <li><a href="mba.html">Master of Business Administration (MBA)</a></li>
+                    <li><a href="ms_cs.html">Master of Science in Computer Science</a></li>
+                    <li><a href="ms_eng.html">Master of Science in Engineering</a></li>
+                    <li><a href="ma_arts.html">Master of Arts in Fine Arts</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="flex-container">
+            <section class="online-learning">
+                <h2>Online Learning</h2>
+                <p>We offer flexible online learning options for students balancing work and education.</p>
+                <ul>
+                    <li><a href="online_business.html">Online Business Programs</a></li>
+                    <li><a href="online_health.html">Online Health Sciences Programs</a></li>
+                </ul>
+            </section>
+
+            <section class="resources">
+                <h2>Resources</h2>
+                <p>For more information about our academic resources, please visit:</p>
+                <ul>
+                    <li><a href="library.html">Library Services</a></li>
+                    <li><a href="academic_advising.html">Academic Advising</a></li>
+                    <li><a href="tutoring.html">Tutoring Services</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our Institution. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

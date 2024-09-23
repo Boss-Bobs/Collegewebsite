@@ -1,0 +1,339 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(255, 244, 227);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*this ome is for header and also the image*/
+#one {
+  background-color: rgb(133, 40, 40);
+  padding: 5px;
+  color: beige;
+  align-items: center;
+}
+
+.divone {
+  text-align: center;
+  list-style-type: none;
+}
+
+.divone ul {
+  list-style-type: none;
+}
+
+.divone ul li {
+  display: inline-block;
+  padding: 5px 20px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.mm {
+  text-decoration: none;
+  color: beige;
+}
+.mm:hover {
+  opacity: 0.5;
+  color: rgb(180, 128, 128);
+}
+
+.schoolimage{
+    width: 100%;
+    height: 230px;
+}
+
+/*this is for the overlapping image section*/
+#three{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    bottom: 77px;
+    z-index: 1;
+    margin: 0px 190px;
+    
+}
+
+.divthree1{
+  flex: 1;
+  background-color: rgb(247, 227, 161);
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  height: 170px;
+  width: 220px;
+  color:rgb(65, 21, 21) ;
+  text-decoration: none;
+  margin: 3px;
+  box-shadow: 2px 2px 8px rgba(36, 36, 36, 0.5);
+}
+.divthree1:hover{
+  background-color: rgb(238, 113, 113);
+  opacity: 0.7;
+   box-shadow: 10px 10px 20px rgba(12, 5, 5, 0.5);
+}
+
+.divthree2{
+    flex: 1;
+    background-color: rgb(133,40,40);
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    height: 170px;
+    width: 220px;
+    color:rgb(247, 227, 161 );
+    text-decoration: none;
+    margin: 3px ;
+    box-shadow: 2px 2px 8px rgba(36, 36, 36, 0.5);
+}
+.divthree2:hover{
+    background-color: rgb(238, 113, 113);
+    opacity: 0.7;
+     box-shadow: 10px 10px 20px rgba(12, 5, 5, 0.5);
+}
+.rowlink{
+  text-decoration: none;
+  font-weight: 300;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*This is for the the row images that overlap*/
+.rowimage1{
+  object-fit: contain;
+  object-position: center;
+  width:70px;
+  height:70px;
+  margin: 9px 9px 2px 9px;
+}
+.rowimage2{
+  object-fit: contain;
+  object-position: center;
+  width:70px;
+  height:70px;
+  margin: 9px 9px 2px 9px;
+}
+.rowimage3{
+  object-fit: contain;
+  object-position: center;
+  width:70px;
+  height:70px;
+  margin: 9px 9px 2px 9px;
+}
+.rowimage4{
+  object-fit: contain;
+  object-position: center;
+  width:70px;
+  height:70px;
+  margin: 9px 9px 2px 9px;
+}
+
+
+/* Now this is the 4th div under the overlapping one*/
+#four{
+  display: flex;
+  justify-content:space-between ;
+  position: relative;
+  max-width:1200px;
+  padding:px;
+  margin: 30px auto;
+  bottom: 30px;
+}
+
+.divfour1, .divfour2{
+  flex: 1;
+  padding: 20px;
+  max-height: 1200px;
+  margin: 10px;
+  max-width: 1200px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f9f9f9;
+  overflow:hidden;
+  box-shadow: 4px 4px 8px rgba(12, 5, 5, 0.5)
+}
+
+.readmorebtn2{
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: rgb(133,40,40);
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.readmorebtn, .readmorebtn2:hover {
+  background-color: rgb(87, 45, 45);
+    opacity: 0.7;
+     box-shadow: 10px 10px 20px rgba(12, 5, 5, 0.5);
+}
+
+.more {
+  display: none;          /* Initially hidden */
+  margin-top: 10px;
+}
+
+/*Campus Image secton div*/
+#five{
+  display: flex;
+  position: relative;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  margin: 15px 150px 40px 150px;
+  
+}
+.divfive{
+  color: rgb(133, 40, 40);
+}
+
+.divfive1, .divfive2, .divfive3{
+  flex: 1;
+  width: 350px;
+  height: 350px;
+  margin:10px;
+  font-size: 15px;
+  color: rgb(133, 40, 40);
+}
+
+.campusimage{
+  width: 350px;
+  height: 350px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(36, 36, 36, 0.5); 
+}
+.campusimage:hover{
+  background-color: rgba(12, 5, 5, 0.5);
+  opacity: 0.5;
+}
+
+#six{
+  align-items: center;
+  clear: both;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  height: 40px;
+  margin:50px 0px 0px 0px;
+}
+
+/*meant to be footer attributes
+footer { 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    text-align: center;
+    align-items: center;
+    z-index: 10;
+}
+*/
+/*for footer*/
+#footer {
+  text-align: center;
+  background-color: #030303; 
+  padding: 20px 20px 0px 20px; 
+  text-align: center; 
+  margin-top: auto; 
+  color: beige; 
+  height: auto;
+}
+
+.footercontent {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footercontent div {
+  margin: 10px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.footercontent a {
+  color: #c21313; /* Link color */
+  text-decoration: none;
+}
+
+.footercontent a:hover {
+  text-decoration: none;
+}
+
+/*This is for the navigation pages in the header*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 80%;
+  margin: 20px auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 10px; /*rgb(255, 243, 194)*/
+  box-shadow: 0px 4px 6px rgba(10, 0, 0, 0.1);
+  text-align: center;
+}
+
+main section ul li{
+  list-style: none;
+  color: beige;
+}
+
+main section a{
+  text-decoration: none;
+  color: rgb(133,40,40);
+  text-decoration: solid;
+}
+
+/* Flex container for side-by-side sections of academic page */
+.flexcontainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+
+.flexcontainer section {
+  width: 45%; 
+  margin: 0 10px; 
+}
+
+.onlinelearning {
+  background-color: rgb(240, 255, 240);
+}
+
+.resources {
+  background-color: rgb(240, 255, 240);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.programs h2,
+.online-learning h2,
+.resources h2 {
+  font-size: 2rem;
+
+}
